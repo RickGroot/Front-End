@@ -1,0 +1,284 @@
+/*padding en margin op 0 zetten*/
+html {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*navigatie van mijn site, mobiel*/
+.nav {
+    position: fixed;
+    z-index: 998;
+    font-size: 4vw;
+    font-weight: bold;
+    top: 0;
+    margin-left: 0;
+    left: 0px;
+}
+
+.nav ul {
+    list-style: none;
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: px;
+    padding-left: 0px;
+    width: 100vw;
+    background-color: #393e46;
+}
+
+li {
+    position: relative;
+    top: 3vh;
+}
+
+.navtitle {
+    display: none;
+}
+
+.socialmedia li {
+    display: none;
+}
+
+a:hover {
+    color: #eeeeee;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+a:link {
+    color: #eeeeee;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+/*styling van de artcles en texten*/
+h1 {
+    position: relative;
+    font-size: 5em;
+    text-align: center;
+    margin-left: 0vw;
+    margin-right: 4vw;
+    padding: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.1em;
+    word-spacing: -0.4em;
+    font-size: 3.8em;
+    display: inline-block;
+    background-color: rgba(238, 238, 238, 0.5);
+    box-shadow: 5px 5px #000000, 10px 10px #00adb5;
+    color: #222831;
+}
+
+section.one {
+    width: 100vw;
+    background-image: url(../img/me.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.two {
+    width: 100vw;
+    background-image: url(../img/trumpet.jpg);
+    height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.three {
+    width: 100vw;
+    background-image: url(../img/urban.jpg);
+    height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.5);
+    box-shadow: 5px 5px #000000, 10px 10px #00adb5;
+    color: #222831;
+}
+
+article {
+    height: 200px;
+    width: 200px;
+    margin: 2vw;
+}
+
+.margin {
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+
+.intro {
+    width: 100%;
+    height: auto;
+    background-color: #eeeeee;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h2 {
+    position: relative;
+    display: block;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.5);
+    box-shadow: -5px -5px #000000, -10px -10px #00adb5;
+    font-size: 2.5em;
+    color: #222831;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.1em;
+    word-spacing: -0.4em;
+    padding: 0px;
+}
+
+p.text {
+    position: relative;
+    display: inline-block;
+    max-width: 700;
+    font-size: 2em;
+    color: #222831;
+    margin-bottom: 2vh;
+    margin-left: -5vw;
+    margin-right: -5vw;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+article img{
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    bottom: 40px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #222831;
+}
+
+/*navigatie van mijn site, desktop*/
+@media screen and (min-width: 600px) {
+    .nav {
+        text-align: left;
+        font-size: 4vw;
+        font-weight: bold;
+        position: fixed;
+        left: -10px;
+        top: 0;
+        transition: 0.3s;
+        margin-left: 0;
+        z-index: 998;
+        height: 100%;
+        background-color: #393e46;
+        width: 30vw;
+        min-width: 200px;
+    }
+
+    .navtitle {
+        font-size: 2vw;
+        color: #222831;
+        display: inline-block;
+        background-color: none;
+    }
+
+    .nav ul {
+        list-style: none;
+        position: relative;
+        margin-top: 0;
+        margin-left: 3vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: auto;
+        max-width: 0%;
+        background-color: none;
+    }
+
+    li {
+        position: relative;
+        top: 10vh;
+        margin-bottom: 1vw;
+    }
+
+    a:hover {
+        position: relative;
+        color: #00adb5;
+        text-decoration: none;
+        padding-left: 5vh;
+        transition: 0.1s;
+    }
+
+    /*verspringen van margin op grote schermen*/
+    p.text,
+    h2 {
+        margin-left: 16vw;
+        margin-right: auto;
+        max-width: 50vw;
+    }
+
+    .projects {
+        margin-left: 29vw;
+        margin-right: 10vw;
+    }
+
+    h1 {
+        margin-left: 30vw;
+        margin-right: 20vw;
+    }
+}
