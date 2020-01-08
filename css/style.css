@@ -8,6 +8,8 @@ html {
 
 body {
     background-color: #eeeeee;
+    width: 100vw;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -15,9 +17,10 @@ body {
 
 /*navigatie van mijn site, mobiel*/
 .nav {
+    font-family: 'Ubuntu', sans-serif;
     position: fixed;
     z-index: 998;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: bold;
     top: 0;
     margin-left: 0;
@@ -33,7 +36,8 @@ body {
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
-    height: px;
+    height: 30px;
+    margin: 0;
     padding-left: 0px;
     width: 100vw;
     background-color: #393e46;
@@ -42,10 +46,7 @@ body {
 li {
     position: relative;
     top: 3vh;
-}
-
-.navtitle {
-    display: none;
+    z-index: 999;
 }
 
 .socialmedia li {
@@ -69,7 +70,7 @@ a:visited {
     text-decoration: none;
 }
 
-/*styling van de artcles en texten*/
+/*styling van de articles en texten*/
 h1 {
     position: relative;
     font-size: 5em;
@@ -77,9 +78,7 @@ h1 {
     margin-left: 0vw;
     margin-right: 4vw;
     padding: 10px;
-    font-family: 'IBM Plex Mono', monospace;
-    letter-spacing: 0.1em;
-    word-spacing: -0.4em;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 3.8em;
     display: inline-block;
     background-color: rgba(238, 238, 238, 0.5);
@@ -87,7 +86,7 @@ h1 {
     color: #222831;
 }
 
-section.one {
+div.one {
     width: 100vw;
     background-image: url(../img/me.jpg);
     height: 100vh;
@@ -101,7 +100,7 @@ section.one {
     align-items: center;
 }
 
-section.two {
+div.two {
     width: 100vw;
     background-image: url(../img/trumpet.jpg);
     height: 25vh;
@@ -113,9 +112,10 @@ section.two {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
-section.three {
+div.three {
     width: 100vw;
     background-image: url(../img/urban.jpg);
     height: 25vh;
@@ -127,15 +127,19 @@ section.three {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
-h1 {
-    display: inline-block;
-    text-align: center;
-    background-color: rgba(238, 238, 238, 0.5);
-    box-shadow: 5px 5px #000000, 10px 10px #00adb5;
-    color: #222831;
+div.twoclicked {
+    height: 80vh;
+    transition: 0.3s;
 }
+
+div.threeclicked {
+    height: 80vh;
+    transition: 0.3s;
+}
+
 
 article {
     height: 200px;
@@ -171,24 +175,21 @@ h2 {
     box-shadow: -5px -5px #000000, -10px -10px #00adb5;
     font-size: 2.5em;
     color: #222831;
-    font-family: 'IBM Plex Mono', monospace;
-    letter-spacing: 0.1em;
-    word-spacing: -0.4em;
+    font-family: 'Ubuntu', sans-serif;
     padding: 0px;
 }
 
 p.text {
     position: relative;
     display: inline-block;
-    max-width: 700;
-    font-size: 2em;
+    font-size: 1.7em;
     color: #222831;
     margin-bottom: 2vh;
-    margin-left: -5vw;
-    margin-right: -5vw;
+    margin-left: -10vw;
+    margin-right: -10vw;
 }
 
-.projects {
+section {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -197,24 +198,57 @@ p.text {
     margin: auto;
 }
 
-article img{
+article a img {
     max-height: 100%;
     max-width: 100%;
     position: relative;
     bottom: 40px;
+    z-index: 500;
+}
+
+h3 {
+    z-index: 600;
 }
 
 footer {
-    position: relative;
+    position: absolute;
     width: 100%;
-    background-color: #222831;
+    height: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    background-color: #393e46;
+}
+
+footer ul li {
+    display: inline-block;
+    position: relative;
+    left: -30px;
+    font-size: 7vh;
+    margin: 20px;
+    color: black;
+}
+
+footer ul li a {
+    position: relative;
+    left: -0px;
+    color: black;
+    background-color:;
+    z-index: 999;
 }
 
 /*navigatie van mijn site, desktop*/
 @media screen and (min-width: 600px) {
     .nav {
+        font-family: 'Ubuntu', sans-serif;
         text-align: left;
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-weight: bold;
         position: fixed;
         left: -10px;
@@ -224,18 +258,16 @@ footer {
         z-index: 998;
         height: 100%;
         background-color: #393e46;
-        width: 30vw;
+        width: 25vw;
         min-width: 200px;
+        padding-top: 20vh;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
-    .navtitle {
-        font-size: 2vw;
-        color: #222831;
-        display: inline-block;
-        background-color: none;
-    }
-
-    .nav ul {
+    .nav ul:first-child {
         list-style: none;
         position: relative;
         margin-top: 0;
@@ -250,10 +282,17 @@ footer {
         background-color: none;
     }
 
-    li {
+    .socialmedia {
+        position: absolute;
+        bottom: -25vw;
+        left: -1.5vw;
+    }
+
+    .socialmedia li {
+        display: flex;
         position: relative;
-        top: 10vh;
         margin-bottom: 1vw;
+        width: auto;
     }
 
     a:hover {
@@ -264,6 +303,14 @@ footer {
         transition: 0.1s;
     }
 
+    .socialmedia li a:hover {
+        padding-left: 0;
+    }
+
+    footer {
+        display: none;
+    }
+
     /*verspringen van margin op grote schermen*/
     p.text,
     h2 {
@@ -272,7 +319,11 @@ footer {
         max-width: 50vw;
     }
 
-    .projects {
+    p.text {
+        font-size: 2em;
+    }
+
+    section {
         margin-left: 29vw;
         margin-right: 10vw;
     }

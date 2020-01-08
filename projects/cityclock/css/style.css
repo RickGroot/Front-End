@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+article {
+    padding: 20px;
+    margin: 200px;
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 240, 240, 0.8);
+    border-style: double;
+}
+
+h1 {
+    margin-top: 2px;
+    font-size: 5em;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Patua One', cursive;
+}
+
+p {
+    font-size: 2em;
+    margin-bottom: 2px;
+}
+
+select {
+    font-size: 1em;
+    font-family: 'Patua One', cursive;
+}
+
+.background {
+    background-image: url();
+}
+
+#maand {
+    font-size: 1em;
+}
+
+.day {
+    background-image: url(../img/daycity.jpeg);
+}
+
+.night {
+    background-image: url(../img/nightcity.png);
+}

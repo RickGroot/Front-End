@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parkour Battles</title>
+    <link rel="stylesheet" href="style/overall.css">
+    <link rel="stylesheet" href="style/stylebattles.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="spots.html">SPOTS</a></li>
+                <li><a href="tricks.html">TRICKS</a></li>
+                <li><a href="popular.html">POPULAR</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <article>
+        <header>
+            <h1>Parkour Battles</h1>
+        </header>
+
+        <section class=artofmotion>
+            <h2>Redd Bull Art of Motion</h2>
+            <!--tekst bron: https://en.wikipedia.org/wiki/Red_Bull_Art_of_Motion-->
+            <p>
+                <!--bron afbeelding: https://www.google.nl/search?q=red+bull+art+of+motion&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjZz8umxqHeAhUKThoKHVvNDYMQ_AUIDigB&biw=1536&bih=723&dpr=1.25#imgrc=7ZYl_KsDXB0-dM:-->
+                <img src="img/artofmotion.jpg" alt="Art of Motion">
+                Red Bull Art of Motion is a freerunning competition held in various countries, including England, Kuwait, the US, and Sweden. Judging of the event is based on several criteria including creativity, flow, execution, and difficulty. </p>
+        </section>
+        <section class=wfpf>
+            <h2>WFPF Competitions</h2>
+            <!--bron tekst: https://www.usaparkour.org/wfpf-competitions/-->
+            <p>
+                <!--bron afbeelding: https://wfpf.com/-->
+                <img src="img/wfpf.jpg" alt="WFPF Competitions">
+                The USAP mission is to serve the Parkour/Freerunning community and to facilitate the “open-source” evolution of parkour as it enters the mainstream of US sport. While we respect parkour as a self-taught and non-competitive discipline, we recognize that many find competition a way to enhance camaraderie with others. Therefore we have teamed up with the World Freerunning Parkour Federation to provide competition guidelines to our member gyms along with a safe, collegial and consistent gameplay through the WFPF Sanctioned Competition program.</p>
+        </section>
+        <section class=spl>
+            <h2>SPL</h2>
+            <!--bron tekst: https://www.sportparkourleague.com/-->
+            <p>
+                <!--bron afbeelding: https://www.google.nl/search?biw=1536&bih=674&tbm=isch&sa=1&ei=DLTRW7-VM8SWaaDTjaAN&q=spl+parkour&oq=spl+parkour&gs_l=img.3..0i24k1.1377.3908.0.4032.8.6.0.2.2.0.51.272.6.6.0....0...1c.1.64.img..0.8.275...0j0i67k1j0i30k1j0i5i30k1j0i8i30k1.0.H4ko6cgBTNk#imgrc=375cYtvZstzr2M:-->
+                <img src="img/spl.jpg" alt="spl">
+                SPORT Parkour League was founded with the mission of creating an engaging competitive platform for parkour athletes that remains true to the culture. We aim to provide an avenue for athletes to regularly participate in competition by creating a standardized format and season of events around the world.</p>
+        </section>
+    </article>
+
+    <footer>
+        <h3>Questions and more news:</h3>
+        <form action="forum.html">
+            <fieldset id=formleft>
+                <legend>Sign up for weekly mails</legend>
+                <label for="firstname">Firstname:</label>
+                <input type="text" id=firstname>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id=male name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id=female name="gender">
+                    <label for="other">Other</label>
+                    <input type="radio" id=other name="gender">
+                </fieldset>
+                <label for="email1">E-mail:</label>
+                <input type="email" id=email1>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <form action="forum.html">
+            <fieldset id=formright>
+                <legend>Send your questions</legend>
+                <label for="email2">E-mail:</label>
+                <input type="email" id=email2>
+                <label for="question">Question:</label>
+                <textarea name="question" id="question" cols="30" rows="10"></textarea>
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
