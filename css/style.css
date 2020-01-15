@@ -1,5 +1,6 @@
 /*padding en margin op 0 zetten*/
 html {
+    font-family: 'Ubuntu', sans-serif;
     width: 100vw;
     height: 100vh;
     padding: 0;
@@ -17,7 +18,6 @@ body {
 
 /*navigatie van mijn site, mobiel*/
 .nav {
-    font-family: 'Ubuntu', sans-serif;
     position: fixed;
     z-index: 998;
     font-size: 5vw;
@@ -78,7 +78,6 @@ h1 {
     margin-left: 0vw;
     margin-right: 4vw;
     padding: 10px;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 3.8em;
     display: inline-block;
     background-color: rgba(238, 238, 238, 0.5);
@@ -86,48 +85,25 @@ h1 {
     color: #222831;
 }
 
+div.one, div.two, div.three {
+    width: 100vw;
+    height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
 div.one {
-    width: 100vw;
-    background-image: url(../img/me.jpg);
     height: 100vh;
-    background-attachment: fixed;
     background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.two {
-    width: 100vw;
-    background-image: url(../img/trumpet.jpg);
-    height: 25vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-}
-
-div.three {
-    width: 100vw;
-    background-image: url(../img/urban.jpg);
-    height: 25vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
+    transition: 0s;
 }
 
 div.twoclicked {
@@ -160,7 +136,6 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 0.9em;
     white-space: pre-wrap;
     margin: 0;
@@ -175,14 +150,13 @@ h2 {
     box-shadow: -5px -5px #000000, -10px -10px #00adb5;
     font-size: 2.5em;
     color: #222831;
-    font-family: 'Ubuntu', sans-serif;
     padding: 0px;
 }
 
 p.text {
     position: relative;
     display: inline-block;
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: #222831;
     margin-bottom: 2vh;
     margin-left: -10vw;
@@ -239,14 +213,12 @@ footer ul li a {
     position: relative;
     left: -0px;
     color: black;
-    background-color:;
     z-index: 999;
 }
 
 /*navigatie van mijn site, desktop*/
 @media screen and (min-width: 600px) {
     .nav {
-        font-family: 'Ubuntu', sans-serif;
         text-align: left;
         font-size: 3.5vw;
         font-weight: bold;
@@ -329,7 +301,7 @@ footer ul li a {
     }
 
     h1 {
-        margin-left: 30vw;
+        margin-left: 35vw;
         margin-right: 20vw;
     }
 }

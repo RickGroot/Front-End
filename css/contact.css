@@ -1,0 +1,67 @@
+.margin {
+    width: 100%;
+    margin-right: 20vw;
+    margin-left: 25vw;
+}
+
+input[type=text],
+select,
+textarea,
+input[type=email] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #00adb5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transform-origin: bottom left;
+    transition: .5s;
+}
+
+input[type=text],
+input[type=email] {
+    width: 200px;
+    transition: .5s;
+}
+
+textarea {
+    width: 30vw;
+    min-width: 300px;
+    height: 400px;
+    transition: .5s;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border: 2px solid #00adb5;
+    width: 300px;
+    transition: .5s;
+}
+
+select:focus {
+    border: 2px solid #00adb5;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+    transform: rotate(-20deg) scale(1.2);
+    transform-origin: bottom left;
+    transition: .5s;
+}
+
+textarea:focus {
+    width: 100%;
+    transition: .5s;
+}
+
+input:invalid {
+    border: 1px solid red;
+}

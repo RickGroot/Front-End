@@ -1,8 +1,21 @@
 // When the user scrolls down 50px from the top of the document, resize the header's font size
-var width = document.getElementById('width').offsetWidth;
+var width = document.querySelector('body').offsetWidth;
+var imagetwo = document.getElementById("clicktwo");
+var imagethree = document.getElementById("clickthree");
+var document;
+var window;
+
+
+function fullscreentwo() {
+    imagetwo.classList.toggle('twoclicked');
+}
+
+function fullscreenthree() {
+    imagethree.classList.toggle('threeclicked');
+}
 
 window.onscroll = function () {
-    scrollFunction()
+    scrollFunction();
 };
 
 function scrollFunction() {
@@ -15,20 +28,6 @@ function scrollFunction() {
             document.getElementById("navigation").style.fontSize = "3.5vw";
         }
     }
-}
-
-
-
-
-var imagetwo = document.getElementById("clicktwo");
-var imagethree = document.getElementById("clickthree");
-
-function fullscreentwo() {
-    imagetwo.classList.toggle('twoclicked');
-}
-
-function fullscreenthree() {
-    imagethree.classList.toggle('threeclicked');
 }
 
 imagetwo.addEventListener('click', fullscreentwo);
